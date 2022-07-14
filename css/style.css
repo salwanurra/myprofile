@@ -26,3 +26,20 @@ h1{
     margin: 30px 0;
     border-bottom: 1px solid #cccccc;
 }
+
+.social-media {
+    list-style: none;
+}
+
+.social-media li {
+    margin-right: 15px;
+}
+
+.social-media i {
+    margin-right: 7px;
+}
+
+.social-media li a {
+    color: #55a9a4 !important;
+    text-decoration: none;
+}
