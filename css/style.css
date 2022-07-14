@@ -1,0 +1,249 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0;
+}
+
+.btn-frontend:hover {
+    background-color: rgb(173, 231, 231);
+}
+
+
+.cv-image{
+    text-align: right;
+}
+
+.cv-image img{
+    width: 119px;
+    height: 119px;
+    border-radius: 100%;
+}
+
+.cv-name h1{
+    color: #262D3D;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.social ul{
+    display: flex;
+    list-style: none;
+}
+
+.social ul li{
+    margin-right: 15px;
+}
+
+.social ul > li > a  > svg{
+    margin-right: 10px !important;
+}
+
+.social ul li a{
+    color: #204ECF;
+    text-decoration: none;
+}
+
+.social ul li a > span{
+    color: #262D3D;
+    transition: ease .5s;
+}
+
+.social ul li a:hover > span{
+    color: #204ECF;
+}
+
+.divider{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    margin: 30px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.cv-experience{
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.cv-education-skill{
+    grid-column-start: 8;
+    grid-column-end: 12;
+}
+
+.cv-education-skill h2,
+.cv-experience h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #8D8D8D;
+    margin-bottom: 32px;
+}
+
+.experience-item{
+    margin-bottom: 32px;
+}
+
+.experience-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.education-item h4,
+.experience-title h4{
+    color: #262D3D;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.experience-content span,
+.experience-title span{
+    color: #262D3D;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.experience-title .line{
+    width: 100%;
+    margin: 0 30px;
+    height: 2px;
+    background-color: #204ECF;
+}
+
+.experience-content span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.education-item{
+    margin-bottom: 32px;
+}
+
+.education-item h4{
+    margin-bottom: 10px;
+}
+
+.education-item p,
+.experience-content p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #757575;
+}
+
+.education-skill-wrapper{
+    margin-bottom: 60px;
+}
+
+.education-item:last-child,
+.education-skill-wrapper:last-child{
+    margin-bottom: 0;
+}
+
+.skills-wrapper{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.skills-wrapper span{
+    background: #EDF1FD;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: ease .5s;
+}
+
+.skills-wrapper span:hover{
+    color: #204ECF;
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 991px) {
+    .cv-image{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .cv-name h1{
+        text-align: center;
+    }
+
+    .social ul{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .cv-image img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .cv-experience{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cv-name h1{
+        font-size: 28px;
+    }
+
+    .cv-education-skill h2, .cv-experience h2{
+        font-size: 25px;
+    }
+
+    .education-item h4, .experience-title h4{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience-title{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .experience-title h4{
+        margin-bottom: 10px;
+    }
+
+    .experience-title .line{
+        display: none;
+    }
+
+    .social ul li a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social ul > li > a > svg {
+        margin-right: 0 !important;
+    }
+
+    .social ul {
+        justify-content: space-between;
+    }
+
+    .social ul li {
+        margin-right: 0;
+    }
+}
